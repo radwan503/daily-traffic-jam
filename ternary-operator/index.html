@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Daily Jam</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="starter-template.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="col-lg-8 mx-auto p-3 py-md-5">
+    <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+      <a href="/" class="d-flex align-items-center text-decoration-none">
+        <span class="fs-4">Daily Jam-ternary operator</span>
+      </a>
+    </header>
+
+    <main>
+      <label for="theme">Select theme: </label>
+      <select id="theme">
+        <option value="white">White</option>
+        <option value="black">Black</option>
+      </select>
+
+      <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem doloremque ad explicabo,
+        nihil dolor
+        assumenda magnam delectus neque minima facilis error velit vero. Veritatis quo vel illum tempore temporibus
+        necessitatibus? Voluptatibus quod eaque facilis velit illo. Dolor perspiciatis sint beatae ab accusamus, error
+        harum assumenda quisquam veritatis sapiente blanditiis praesentium modi ipsum eligendi itaque. Sint enim amet
+        deleniti quibusdam doloribus veniam in fuga cupiditate, voluptates iusto id, dignissimos corporis reprehenderit
+        laborum a distinctio saepe alias provident, earum eligendi! Facere vitae debitis modi inventore itaque deleniti
+        a beatae quasi, explicabo, iure maxime soluta laboriosam cumque veniam nihil, necessitatibus dolor distinctio
+        amet!</p>
+    </main>
+  </div>
+
+  <script>
+    const theme = document.getElementById('theme');
+    const html = document.querySelector('body')
+    document.body.style.padding = '10px'
+
+    function bgChange(bgColor, textColor) {
+      console.log('hit')
+      html.style.backgroundColor = bgColor;
+      html.style.color = textColor;
+    }
+
+    theme.addEventListener('change', () =>
+      theme.value === 'black' ? bgChange('black', 'white') : bgChange('white', 'black')
+
+    )
+
+
+  </script>
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
