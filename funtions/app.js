@@ -1,11 +1,11 @@
-// const myText = 'Hello World';
-// const newString = myText.replace('World', 'Javascript');
-// console.log(newString)
+const myText = 'Hello World';
+const newString = myText.replace('World', 'Javascript');
+console.log(newString)
 
 
-// const arraySentence = ['Learning', 'Javascript', 'is', 'most', 'important', 'as', 'Developer'];
-// const completeSentence = arraySentence.join(' ');
-// console.log(completeSentence)
+const arraySentence = ['Learning', 'Javascript', 'is', 'most', 'important', 'as', 'Developer'];
+const completeSentence = arraySentence.join(' ');
+console.log(completeSentence)
 
 
 const name = 'Zaptec';
